@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <title>Rotate String </title>
+<body>
+<body>
+    <div id="rotateStr">Do You Know What I Feel?</div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+<script>
+window.onload = function rotateStringRight() {
+    var elem = document.getElementById("rotateStr");
+    var textNode = elem.childNodes[0];
+    var str = textNode.data;
+ 
+    setInterval(function() {
+        var lastChar = str.charAt(str.length - 1);
+        var shortStr = str.substr(0, str.length - 1);
+        str = lastChar + shortStr;
+ 
+        textNode.data = str;
+    }, 100);
+ 
+};      
+
+</script>
+
+</body>
+
+</html>

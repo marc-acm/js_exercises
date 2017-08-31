@@ -1,0 +1,56 @@
+<head>
+  <meta charset="utf-8">
+  <title>Current Day</title>
+  </head>
+  <body>
+  	<hi>3. Current Day</h1>
+  	
+    <p id="today1"></p> <br> 
+  	
+  	<p id="today2"></p> <br>
+
+  	<p id="today3"></p> <br>
+
+    <p id="today4"></p> <br>
+  	
+
+
+
+
+<script>
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd = '0'+dd;
+} 
+
+if(mm<10) {
+    mm = '0'+mm;
+} 
+
+current_day = mm + '/' + dd + '/' + yyyy;
+document.getElementById("today1").innerHTML = current_day;
+
+current_day1 = mm + '-' + dd + '-' + yyyy;
+document.getElementById("today2").innerHTML = current_day1;
+
+
+current_day2 = dd + '/' + mm + '/' + yyyy;
+document.getElementById("today3").innerHTML = current_day2;
+
+current_day3 = dd + '-' + mm + '-' + yyyy;
+document.getElementById("today4").innerHTML = current_day3;
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html> 

@@ -1,0 +1,24 @@
+<!-- Write a javascript program to find the area of a triangle where lengths of the three of its sides are 5,6,7 -->
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <title>Area of Triangle </title>
+<body>
+
+ <p>Area of a Triangle :<span id="triarea"></span></p>
+
+<script>
+  var triarea = function(side1,side2,side3) {
+	var p = (side1+side2+side3)/2;
+	var a = Math.sqrt(p*(p-side1)*(p-side2)*(p-side3));
+  return a;
+}
+//fill in side lengths below
+document.write(triarea(5,6,7));
+
+</script>
+
+</body>
+
+</html>
